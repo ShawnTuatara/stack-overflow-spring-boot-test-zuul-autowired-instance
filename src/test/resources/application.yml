@@ -1,0 +1,10 @@
+logging:
+  level:
+    org.springframework.cloud.netflix.zuul.filters: DEBUG
+    ca.tuatara.spring.cloud.zuul: DEBUG
+zuul:
+  routes:
+    test-route:
+      path: /test/**
+      location: http://localhost:8080
+      strip-prefix: false
